@@ -1,31 +1,20 @@
 {
-  "name": "storybook-test",
-  "packageManager": "yarn@3.3.1",
-  "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
+  "name": "style-dictionary-auto-rebuild-watcher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
   "files": [
     "build",
     "properties"
   ],
   "scripts": {
-    "lint": "eslint --ignore-path .gitignore --quiet --no-error-on-unmatched-pattern packages/**/*{js,jsx,ts,tsx}",
     "build": "node ./build.js",
     "clean": "rm -rf build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "",
+  "license": "Apache-2.0",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.48.1",
-    "@typescript-eslint/parser": "^5.48.1",
-    "eslint": "^8.31.0",
-    "eslint-config-prettier": "^8.6.0",
-    "eslint-plugin-jsx-a11y": "^6.7.1",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.32.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "prettier": "^2.8.3",
-    "typescript": "4.7.2",
     "style-dictionary": "3.7.2"
   }
 }
