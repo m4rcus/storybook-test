@@ -1,0 +1,114 @@
+/* @import 'css/variables.css'; */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
+.poly-button {
+  font-family: 'IBM Plex Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: 0;
+  border-radius: calc(var(--button-border-radius) * 1px);
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  color: var(--button-primary-contained-default-text-color);
+}
+
+.poly-button--primary {
+  background-color: var(--button-primary-contained-default-background-color);
+}
+
+.poly-button--error {
+  background-color: var(--button-error-contained-default-background-color);
+}
+
+.poly-button--warning {
+  background-color: var(--button-warning-contained-default-background-color);
+}
+
+.poly-button--info {
+  background-color: var(--button-info-contained-default-background-color);
+}
+
+.poly-button--success {
+  background-color: var(--button-success-contained-default-background-color);
+}
+
+.poly-button--outlined {
+  outline-width: 1px;
+  outline-style: solid;
+  outline-offset: -1px;
+  background-color: transparent;
+}
+
+.poly-button--outlined.poly-button--primary {
+  outline-color: var(--button-primary-outlined-default-border-color);
+  color: var(--button-primary-outlined-default-text-color);
+}
+
+.poly-button--outlined.poly-button--error {
+  outline-color: var(--button-error-outlined-default-border-color);
+  color: var(--button-error-outlined-default-text-color);
+}
+
+.poly-button--outlined.poly-button--warning {
+  outline-color: var(--button-warning-outlined-default-border-color);
+  color: var(--button-warning-outlined-default-text-color);
+}
+
+.poly-button--outlined.poly-button--info {
+  outline-color: var(--button-info-outlined-default-border-color);
+  color: var(--button-info-outlined-default-text-color);
+}
+
+.poly-button--outlined.poly-button--success {
+  outline-color: var(--button-success-outlined-default-border-color);
+  color: var(--button-success-outlined-default-text-color);
+}
+
+.poly-button--text {
+  outline-style: none;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+.poly-button--text.poly-button--primary {
+  color: var(--button-primary-text-default-text-color);
+}
+.poly-button--text.poly-button--error {
+  color: var(--button-error-text-default-text-color);
+}
+.poly-button--text.poly-button--warning {
+  color: var(--button-warning-text-default-text-color);
+}
+.poly-button--text.poly-button--info {
+  color: var(--button-info-text-default-text-color);
+}
+.poly-button--text.poly-button--success {
+  color: var(--button-success-text-default-text-color);
+}
+
+.poly-button--small {
+  font-size: 13px;
+  line-height: 22px;
+  padding: 4px 10px;
+}
+.poly-button--medium {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 6px 16px;
+}
+.poly-button--large {
+  font-size: 15px;
+  line-height: 26px;
+  padding: 8px 21px;
+}
+.poly-button--contained.disabled {
+  background-color: var(--button-disabled-contained-default-background-color);
+  color: var(--button-disabled-contained-default-text-color);
+}
+.poly-button--outlined.disabled {
+  outline-color: var(--button-disabled-outlined-default-border-color);
+  color: var(--button-disabled-outlined-default-text-color);
+}
+.poly-button--text.disabled {
+  color: var(--button-disabled-text-default-text-color);
+}
