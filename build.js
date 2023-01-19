@@ -10,7 +10,7 @@ function getStyleDictionaryConfig(brand, platform) {
     "platforms": {
       "css": {
         "transformGroup": "css",
-        "buildPath": "css/",
+        "buildPath": "packages/storybook/stories/css/",
         "files": [{
           "destination": `${brand}.css`,
           "format": "css/variables"
